@@ -4,57 +4,146 @@
   <meta charset="utf-8">
   <title>Test My Ski</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slider.css">
+  <link rel="stylesheet" href="css/demo.css">
   <link rel="stylesheet" href="css/semantic.css">
+
+  <link rel="stylesheet" type="text/css" href="css/extend/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/site.css">
+
+  <link rel="stylesheet" type="text/css" href="css/extend/container.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/grid.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/header.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/image.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/menu.css">
+
+  <link rel="stylesheet" type="text/css" href="css/extend/divider.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/list.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/segment.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/icon.css">
+
+  <script src="js/modernizr.custom.86080.js"></script>
   <script src="js/app.js"></script>
 </head>
+
 <body>
-<div id="main_menu" class="animated ui top fixed inverted pointing menu j-menu-main headroom--not-top">
 
-	<a class="j-menu-logo" href="/">&nbsp</a>
-
-    <div class="ui grid">
-
-      <div class="computer tablet only row">
-        <div class="ui inverted fixed menu navbar page grid"  id="main-menu" >
-          <div class="right menu">     
-            <a class="item menu-item" href="formation.html"><i class="edit icon"></i> Formation</a>
-            <a class="item menu-item" href="actualites.html"><i class="newspaper icon"></i> Actu & events</a>
-            <a class="item menu-item" href="promotion.html"><i class="users icon"></i>Promotions</a>
-            <!--<a class="item menu-item" href="emploi.html"><i class="users icon"></i>Emploi</a>-->
-            <a class="item menu-item" href="contact.html"><i class="icon mail"></i></a>
-          </div>
-        </div>
-      </div>
-
-     <div class="mobile only row">
-        <div class="ui fixed inverted navbar menu">
-          <a class="j-menu-logo" href="/">&nbsp</a>
-          <div class="right menu open">
-            <a href="/" class="menu item">
-              <i class="content icon"></i>             
-            </a>
-          </div>
-        </div>
-        <div class="ui vertical navbar menu">
-          <a class="item" href="/formation.html"><i class="edit icon"></i>Formation</a>
-          <a class="item" href="/actualites.html"><i class="newspaper icon"></i>Actu & events</a>
-          <a class="item" href="/emploi.html"><i class="users icon"></i>Emploi</a>
-          <a class="item" href="/contact.html"><i class="icon mail"></i></a>
-        </div>
-      </div>
-
+<section class="navbar">
+  <div class="ui inverted segment">
+    <div class="ui inverted secondary pointing menu">
+      <a class="active item">
+        Home
+      </a>
+      <a class="item">
+        Messages
+      </a>
+      <a class="item">
+        Friends
+      </a>
     </div>
-
   </div>
-<section id="hero">
-	<img src="img/snow.jpg">
-	<div class="fg-hero container">
-    	<div class="ui one column stackable grid centered container button-hero">
-      	<div class="ui large buttons accueil-hero">
-        	<a class="formdev-accueil" href="#"><button class="ui button">Les Formations</button></a>
-      	</div>
-    	</div>
-	</div>
 </section>
+
+<!--<section id="hero">
+  <ul class="cb-slideshow">
+    <li><span>Image 01</span><div><h3>Tu sais skier, tu peux tester</h3></div></li>
+    <li><span>Image 02</span><div><h3>Découvrez des stations mémorables</h3></div></li>
+    <li><span>Image 03</span><div><h3>Testez le ski de vos rêves</h3></div></li>
+    <li><span>Image 04</span><div><h3>Test My Ski</h3></div></li>
+    <li><span>Image 05</span><div><h3>Trouvez le loueurs qui aura votre bonheur</h3></div></li>
+    <li><span>Image 06</span><div><h3>Apprenez l'histoire de la station</h3></div></li>
+  </ul>
+</section>-->
+
+<section id="search" class="ui container stackable search">
+  <h1 class="titre">Trouvez votre Ski</h1>
+  <div class="ui equal width grid">
+    <div class="column">
+      <select id="monts" name="monts">
+        <option>Les Massifs</option>
+        <option value="AlpesS">Alpes du Sud</option>
+        <option value="AlpesN">Alpes du Nord</option>
+        <option value="Jura">Jura / Vosges</option>
+        <option value="Massif">Massif Central</option>
+        <option value="Pyrennees">Pyrenées</option>
+      </select>
+    </div>
+    <div class="column">
+      <select id="stations" name="stations">
+        <option>Les Stations</option>
+        <option value="Le-Devoluy" class="AlpesS">Le Devoluy</option>
+        <option value="Serre-Chevalier" class="AlpesS">Serre Chevalier</option>
+        <option value="Chatel" class="AlpesN">Chatel</option>
+        <option value="Les-2-Alpes" class="AlpesN">Les 2 Alpes</option>
+        <option value="Champ-du-Feu" class="Jura">Champ du Feu</option>
+        <option value="Bresse" class="Jura">La Bresse</option>
+        <option value="Super" class="Massif">Super Besse</option>
+        <option value="Lioran" class="Massif">Le Lioran</option>
+        <option value="Andorre" class="Pyrennees">Andorre</option>
+        <option value="Pyrenees-2000" class="Pyrennees">Pyrenees 2000</option>
+      </select>
+    </div>
+    <div class="column">
+      <select id="brands" name="brands">
+        <option>Les Skis</option>
+          <optgroup label="Armada" value="marque1" class="Le-Devoluy marque">
+            <option value="ski1" class="Le-Devoluy ski">. AR7</option>
+            <option value="ski2" class="Le-Devoluy ski">. B-Dog</option>
+          </optgroup>
+          <optgroup label="Dynastar" value="marque2" class="Serre-Chevalier marque">
+            <option value="ski3" class="Serre-Chevalier ski">Cham 2.0 117</option>
+            <option value="ski4" class="Serre-Chevalier ski">Course WC Premium</option>
+          </optgroup>
+          <optgroup label="Salomon" value="marque3" class="Chatel marque">
+            <option value="ski5" class="Chatel ski">MTN Lab</option>
+            <option value="ski6" class="Chatel ski">X-Race Lab 175</option>
+          </optgroup>
+          <optgroup label="Rossignol" value="marque4" class="Les-2-Alpes marque">
+            <option value="ski7" class="Les-2-Alpes ski">Smash 7</option>
+            <option value="ski8" class="Les-2-Alpes ski">Hero Master R21 WC</option>
+          </optgroup>
+          <optgroup label="Lacroix" value="marque5" class="Champ-du-Feu marque">
+            <option value="ski9" class="Champ-du-Feu ski">Ultime Lady</option>
+            <option value="ski10" class="Champ-du-Feu ski">Mach Carbon</option>
+          </optgroup>
+          <optgroup label="Armada" value="marque5" class="Bresse marque">
+            <option value="ski9" class="Bresse ski">AR7</option>
+            <option value="ski10" class="Bresse ski">B-Dog</option>
+          </optgroup>
+          <optgroup label="Dynastar" value="marque5" class="Super marque">
+            <option value="ski9" class="Super ski">Cham 2.0 117</option>
+            <option value="ski10" class="Super ski">Course WC Premium</option>
+          </optgroup>
+          <optgroup label="Salomon" value="marque5" class="Lioran marque">
+            <option value="ski9" class="Lioran ski">MTN Lab</option>
+            <option value="ski10" class="Lioran ski">X-Race Lab 175</option>
+          </optgroup>
+          <optgroup label="Rossignol" value="marque5" class="Andorre marque">
+            <option value="ski9" class="Andorre ski">Smash 7</option>
+            <option value="ski10" class="Andorre ski">Hero Master R21 WC</option>
+          </optgroup>
+          <optgroup label="Lacroix" value="marque5" class="Pyrenees-2000 marque">
+            <option value="ski9" class="Pyrenees-2000 ski">Ultime Lady</option>
+            <option value="ski10" class="Pyrenees-2000 ski">Mach Carbon</option>
+          </optgroup>
+      </select>
+    </div>
+  </div>
+</section>
+
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Righteous::latin', 'Comfortaa:400,300,700:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
 </body>
 </html>
