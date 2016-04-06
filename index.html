@@ -2,11 +2,11 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Test My Ski</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Titre de la page</title>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/slider.css">
   <link rel="stylesheet" href="css/demo.css">
-  <link rel="stylesheet" href="css/semantic.css">
+  <link rel="stylesheet" href="css/slider.css">
 
   <link rel="stylesheet" type="text/css" href="css/extend/reset.css">
   <link rel="stylesheet" type="text/css" href="css/extend/site.css">
@@ -20,43 +20,26 @@
   <link rel="stylesheet" type="text/css" href="css/extend/divider.css">
   <link rel="stylesheet" type="text/css" href="css/extend/list.css">
   <link rel="stylesheet" type="text/css" href="css/extend/segment.css">
+  <link rel="stylesheet" type="text/css" href="css/extend/dropdown.css">
   <link rel="stylesheet" type="text/css" href="css/extend/icon.css">
 
-  <script src="js/modernizr.custom.86080.js"></script>
-  <script src="js/app.js"></script>
 </head>
-
 <body>
 
-<section class="navbar">
-  <div class="ui inverted segment">
-    <div class="ui inverted secondary pointing menu">
-      <a class="active item">
-        Home
-      </a>
-      <a class="item">
-        Messages
-      </a>
-      <a class="item">
-        Friends
-      </a>
-    </div>
+<section id="hero">
+  <div id="ui header fg-hero">
+    <ul class="cb-slideshow">
+        <li><span><img src="../img/snow.jpg">Image 01</span><div><h3>Tu sais skier, </br>tu peux tester</h3></div></li>
+        <li><span><img src="../img/decor.jpg">Image 02</span><div><h3>Découvrez des stations mémorables</h3></div></li>
+        <li><span><img src="../img/montagne.jpg">Image 03</span><div><h3>Testez le ski de vos rêves</h3></div></li>
+        <li><span><img src="../img/piste.jpg">Image 04</span><div><h3>Test My Ski</h3></div></li>
+        <li><span><img src="../img/telesiege.jpg">Image 05</span><div><h3>Trouvez le loueur qui aura votre bonheur</h3></div></li>
+        <li><span><img src="../img/montagne1.jpg">Image 06</span><div><h3>Apprenez l'histoire de la station</h3></div></li>
+      </ul>
   </div>
 </section>
 
-<!--<section id="hero">
-  <ul class="cb-slideshow">
-    <li><span>Image 01</span><div><h3>Tu sais skier, tu peux tester</h3></div></li>
-    <li><span>Image 02</span><div><h3>Découvrez des stations mémorables</h3></div></li>
-    <li><span>Image 03</span><div><h3>Testez le ski de vos rêves</h3></div></li>
-    <li><span>Image 04</span><div><h3>Test My Ski</h3></div></li>
-    <li><span>Image 05</span><div><h3>Trouvez le loueurs qui aura votre bonheur</h3></div></li>
-    <li><span>Image 06</span><div><h3>Apprenez l'histoire de la station</h3></div></li>
-  </ul>
-</section>-->
-
-<section id="search" class="ui container stackable search">
-  <h1 class="titre">Trouvez votre Ski</h1>
+<!--<h1 class="titre">Trouvez votre Ski</h1>
   <div class="ui equal width grid">
     <div class="column">
       <select id="monts" name="monts">
@@ -128,9 +111,81 @@
           </optgroup>
       </select>
     </div>
+  </div>-->
+
+<section class="navbar">
+    <div class="ui top fixed menu inverted stackable">
+      <div class="item">
+        <img src="/images/logo.png">
+      </div>
+      <a class="item">Features</a>
+      <a class="item">Testimonials</a>
+      <a class="item">Sign-in</a>
   </div>
 </section>
 
+
+<!--<section id="about">
+  <div class="ui grid stackable about-us">
+    <h1>Trouvez votre Ski</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi imperdiet id ex vel consectetur. Nullam at ex nibh. Suspendisse volutpat, enim ut eleifend porta, tortor urna consequat sapien, eget gravida odio odio nec urna. Maecenas malesuada nisl quis eros efficitur vulputate. Praesent tristique non ex tincidunt tincidunt. Duis nec volutpat arcu, in viverra ligula. Quisque a ultrices quam. Praesent molestie a massa eu congue.
+    </br>
+    Curabitur sed nibh maximus, fringilla nibh id, congue justo. Quisque gravida ut dui id suscipit. Nulla euismod ex et commodo dictum. Aliquam porta malesuada ultricies. Sed a magna posuere, tempus ex a, consectetur eros. Suspendisse turpis mi, semper at ullamcorper eget, fringilla et felis. Sed varius sit amet erat ut placerat. Suspendisse fringilla, lorem ut fermentum malesuada, nunc dolor fermentum ex, id lacinia mi nulla ac odio. Donec hendrerit fringilla ligula, ut sodales nibh accumsan quis. Sed malesuada nisi eu aliquam tempus. Proin et erat ut quam porta semper.
+    </br>
+    Sed eget ipsum eleifend, auctor lectus ut, tempor turpis. Nullam sed sem ac urna rutrum fringilla. Cras consequat eleifend justo ut tincidunt. Nulla auctor risus tincidunt pharetra vestibulum. Donec luctus id ante non rhoncus. Nunc lacus dui, feugiat molestie convallis et, gravida vel mi. Proin nec posuere tortor. Nulla ac dolor lacinia, interdum arcu ac, tincidunt ex. In interdum suscipit maximus. Duis accumsan massa lacus, nec tincidunt nisl pharetra vitae. Donec elementum auctor lacus quis ultrices. Donec maximus vulputate eros nec luctus. Proin ornare orci dui, a imperdiet arcu tristique vitae.</p>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted divided grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 1</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 2</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 3</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <img src="assets/images/logo.png" class="ui centered mini image">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</section>-->
+
+<script src="js/app.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.86080.js"></script>
 
 <script type="text/javascript">
   WebFontConfig = {
@@ -147,3 +202,77 @@
 
 </body>
 </html>
+
+<!--<h1 class="titre">Trouvez votre Ski</h1>
+  <div class="ui equal width grid">
+    <div class="column">
+      <select id="monts" name="monts">
+        <option>Les Massifs</option>
+        <option value="AlpesS">Alpes du Sud</option>
+        <option value="AlpesN">Alpes du Nord</option>
+        <option value="Jura">Jura / Vosges</option>
+        <option value="Massif">Massif Central</option>
+        <option value="Pyrennees">Pyrenées</option>
+      </select>
+    </div>
+    <div class="column">
+      <select id="stations" name="stations">
+        <option>Les Stations</option>
+        <option value="Le-Devoluy" class="AlpesS">Le Devoluy</option>
+        <option value="Serre-Chevalier" class="AlpesS">Serre Chevalier</option>
+        <option value="Chatel" class="AlpesN">Chatel</option>
+        <option value="Les-2-Alpes" class="AlpesN">Les 2 Alpes</option>
+        <option value="Champ-du-Feu" class="Jura">Champ du Feu</option>
+        <option value="Bresse" class="Jura">La Bresse</option>
+        <option value="Super" class="Massif">Super Besse</option>
+        <option value="Lioran" class="Massif">Le Lioran</option>
+        <option value="Andorre" class="Pyrennees">Andorre</option>
+        <option value="Pyrenees-2000" class="Pyrennees">Pyrenees 2000</option>
+      </select>
+    </div>
+    <div class="column">
+      <select id="brands" name="brands">
+        <option>Les Skis</option>
+          <optgroup label="Armada" value="marque1" class="Le-Devoluy marque">
+            <option value="ski1" class="Le-Devoluy ski">. AR7</option>
+            <option value="ski2" class="Le-Devoluy ski">. B-Dog</option>
+          </optgroup>
+          <optgroup label="Dynastar" value="marque2" class="Serre-Chevalier marque">
+            <option value="ski3" class="Serre-Chevalier ski">Cham 2.0 117</option>
+            <option value="ski4" class="Serre-Chevalier ski">Course WC Premium</option>
+          </optgroup>
+          <optgroup label="Salomon" value="marque3" class="Chatel marque">
+            <option value="ski5" class="Chatel ski">MTN Lab</option>
+            <option value="ski6" class="Chatel ski">X-Race Lab 175</option>
+          </optgroup>
+          <optgroup label="Rossignol" value="marque4" class="Les-2-Alpes marque">
+            <option value="ski7" class="Les-2-Alpes ski">Smash 7</option>
+            <option value="ski8" class="Les-2-Alpes ski">Hero Master R21 WC</option>
+          </optgroup>
+          <optgroup label="Lacroix" value="marque5" class="Champ-du-Feu marque">
+            <option value="ski9" class="Champ-du-Feu ski">Ultime Lady</option>
+            <option value="ski10" class="Champ-du-Feu ski">Mach Carbon</option>
+          </optgroup>
+          <optgroup label="Armada" value="marque5" class="Bresse marque">
+            <option value="ski9" class="Bresse ski">AR7</option>
+            <option value="ski10" class="Bresse ski">B-Dog</option>
+          </optgroup>
+          <optgroup label="Dynastar" value="marque5" class="Super marque">
+            <option value="ski9" class="Super ski">Cham 2.0 117</option>
+            <option value="ski10" class="Super ski">Course WC Premium</option>
+          </optgroup>
+          <optgroup label="Salomon" value="marque5" class="Lioran marque">
+            <option value="ski9" class="Lioran ski">MTN Lab</option>
+            <option value="ski10" class="Lioran ski">X-Race Lab 175</option>
+          </optgroup>
+          <optgroup label="Rossignol" value="marque5" class="Andorre marque">
+            <option value="ski9" class="Andorre ski">Smash 7</option>
+            <option value="ski10" class="Andorre ski">Hero Master R21 WC</option>
+          </optgroup>
+          <optgroup label="Lacroix" value="marque5" class="Pyrenees-2000 marque">
+            <option value="ski9" class="Pyrenees-2000 ski">Ultime Lady</option>
+            <option value="ski10" class="Pyrenees-2000 ski">Mach Carbon</option>
+          </optgroup>
+      </select>
+    </div>
+  </div>-->
